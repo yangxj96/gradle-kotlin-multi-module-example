@@ -1,0 +1,12 @@
+dependencies {
+    api(project(":untitled-bean"))
+    api(project(":untitled-common"))
+
+    implementation("org.springframework.cloud:spring-cloud-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    runtimeOnly("com.mysql:mysql-connector-j")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
